@@ -1,6 +1,7 @@
 import React, { useState } from 'react';  // useState is used for state management
 import { useHistory } from 'react-router-dom';
 import jwt_decode from "jwt-decode";
+import { URL } from './config';
 
 var axios = require('axios');
 
@@ -46,10 +47,9 @@ function Login() {
           
           var config = {
             method: 'POST',
-            url: '/api1/api/v1/issuer/authenticate',
+            url: `${URL}/login`,
             headers: { 
-              'Access-Control-Allow-Origin' : '*',
-              'apikey': 'HEKA5PJTHKKHYM4V595B5RUXL56VLDFB', 
+              'Access-Control-Allow-Origin' : '*', 
               'Content-Type': 'application/json',
               "mode": 'no-cors'
             },
@@ -65,6 +65,7 @@ function Login() {
           })
           .catch(function (error) {
             alert(error);
+            console.log(error);
           });
         
     }
