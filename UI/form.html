@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="form.js"></script>
+</head>
+<body>
+    <div class="container mt-3" style="padding-top: 6%">
+        <form action="" method="post" name="Form" onsubmit="return validateForm()">
+            <div class="row mt-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <label for="fname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <label for="bod">Date Of Birth:</label>
+                    <input type="date" class="form-control" id="dob" placeholder="Enter Date Of Birth" name="dob" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <label for="cor">Country Of Residence:</label>
+                    <input type="text" class="form-control" id="cor" placeholder="Enter Country Of Residence" name="cor" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
