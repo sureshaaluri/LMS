@@ -15,7 +15,7 @@ const UserSchema = new mongoose.Schema({
     // licenseId:String,
     // cor:String,
    
-    // tokens:String,
+    tokens:String,
     // email:String,
     // weight:Number,
     // address:String,

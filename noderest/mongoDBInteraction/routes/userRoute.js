@@ -199,7 +199,7 @@ router.post("/login",async(req,res)=>{
                     console.log("updated successfully")
                 }
             })
-// console.log("updateOne "+updateOne)
+            console.log("updateOne "+updateOne)
             res.cookie("jwtoken",token,{
                 expires : new Date(Date.now()+25892000000),
                 httpOnly : true 

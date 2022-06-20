@@ -15,7 +15,7 @@ server.listen(port, async function () {
 
     // res.send( "hello" );
     const username  =  'admin'
-    const email     =  'admin@aetna.com'
+    const email     =  'admin@lms.com'
     const userpassword  =  '123456'
     const role          =   'Admin'
 
